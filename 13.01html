@@ -1,0 +1,12 @@
+.enunciado {
+    background-color: #ccffcc;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #008000;
+}
+
+.solucion {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #0000ff;
+}

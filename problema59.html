@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi pagina adaptable</title>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .caja {
+      background-color: white;
+      padding: 30px;
+      margin: 20px;
+      border: 2px solid black;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-color: lightgreen;
+      }
+
+      .caja {
+        margin: 5px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi pagina web</h1>
+
+  <div class="caja">
+    <h2>Hola amigos</h2>
+    <p>Esta pagina cambia segun el tamaño de la pantalla.</p>
+  </div>
+</body>
+</html>

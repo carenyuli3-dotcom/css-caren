@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orden de las cajas</title>
+  <style>
+    .contenedor {
+      display: flex;
+      gap: 10px;
+    }
+
+    .caja {
+      background-color: pink;
+      border: 2px solid red;
+      padding: 20px;
+    }
+
+    .caja1 {
+      order: 3;
+    }
+
+    .caja2 {
+      order: 2;
+    }
+
+    .caja3 {
+      order: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cambiando el orden</h1>
+
+  <div class="contenedor">
+    <div class="caja caja1">Caja 1</div>
+    <div class="caja caja2">Caja 2</div>
+    <div class="caja caja3">Caja 3</div>
+  </div>
+</body>
+</html>

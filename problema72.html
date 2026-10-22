@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cajas alineadas</title>
+  <style>
+    .contenedor {
+      display: flex;
+      align-items: flex-start;
+      height: 250px;
+      background-color: lightgray;
+      gap: 10px;
+    }
+
+    .caja {
+      background-color: lightblue;
+      border: 2px solid blue;
+      padding: 15px;
+    }
+
+    .caja1 {
+      align-self: flex-start;
+    }
+
+    .caja2 {
+      align-self: center;
+    }
+
+    .caja3 {
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alineando mis cajas</h1>
+
+  <div class="contenedor">
+    <div class="caja caja1">Arriba</div>
+    <div class="caja caja2">Centro</div>
+    <div class="caja caja3">Abajo</div>
+  </div>
+</body>
+</html>

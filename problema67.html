@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cajas que crecen</title>
+  <style>
+    .contenedor {
+      display: flex;
+      background-color: lightgray;
+      gap: 5px;
+    }
+
+    .caja {
+      background-color: lightblue;
+      padding: 20px;
+      border: 2px solid blue;
+    }
+
+    .caja2 {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cajas de diferentes tamaños</h1>
+
+  <div class="contenedor">
+    <div class="caja">Caja 1</div>
+    <div class="caja caja2">Caja 2</div>
+    <div class="caja">Caja 3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mis cajas flexibles</title>
+  <style>
+    .contenedor {
+      display: flex;
+      flex-flow: row wrap;
+      background-color: lightgray;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .caja {
+      background-color: yellow;
+      border: 2px solid orange;
+      width: 120px;
+      height: 80px;
+      text-align: center;
+      padding-top: 15px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cajas flexibles</h1>
+
+  <div class="contenedor">
+    <div class="caja">Caja 1</div>
+    <div class="caja">Caja 2</div>
+    <div class="caja">Caja 3</div>
+    <div class="caja">Caja 4</div>
+    <div class="caja">Caja 5</div>
+  </div>
+</body>
+</html>

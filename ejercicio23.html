@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        let nombre = prompt('Ingrese su nombre completo:');
+
+        document.write('El nombre ingresado es: ' + nombre);
+        document.write('<br>');
+
+        document.write('Cantidad de caracteres: ' + nombre.length);
+        document.write('<br>');
+
+        document.write('Primer carácter: ' + nombre.charAt(0));
+        document.write('<br>');
+
+        document.write('Primeros 5 caracteres: ' + nombre.substring(0, 5));
+        document.write('<br>');
+
+        if (nombre.indexOf('Ana') != -1) {
+            document.write('El nombre contiene la palabra Ana');
+        } else {
+            document.write('El nombre no contiene la palabra Ana');
+        }
+
+        document.write('<br>');
+
+        document.write('Nombre en mayúsculas: ' + nombre.toUpperCase());
+        document.write('<br>');
+
+        document.write('Nombre en minúsculas: ' + nombre.toLowerCase());
+        document.write('<br>');
+
+        document.write('Nombre sin espacios al inicio y al final: ' + nombre.trim());
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo POO</title>
+</head>
+<body>
+
+    <h1>Ejemplo de una casa</h1>
+    <p id="resultado"></p>
+
+    <script>
+        // Crear la clase
+        class Casa {
+            constructor(color, habitaciones) {
+                this.color = color;
+                this.habitaciones = habitaciones;
+            }
+
+            mostrar() {
+                return "Color: " + this.color +
+                       ", Habitaciones: " + this.habitaciones;
+            }
+        }
+
+        // Crear un objeto
+        const casa1 = new Casa("Blanca", 3);
+
+        // Mostrar información
+        document.getElementById("resultado").innerHTML =
+            casa1.mostrar();
+    </script>
+
+</body>
+</html>

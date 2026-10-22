@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Promedio de notas</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function cargar(notas) {
+            for (let f = 0; f < notas.length; f++) {
+                let v = prompt('Ingrese la nota del estudiante:');
+                notas[f] = parseFloat(v);
+            }
+        }
+
+        function calcularPromedio(notas) {
+            let suma = 0;
+
+            for (let f = 0; f < notas.length; f++) {
+                suma = suma + notas[f];
+            }
+
+            let promedio = suma / notas.length;
+
+            document.write('Listado de notas<br>');
+
+            for (let f = 0; f < notas.length; f++) {
+                document.write(notas[f] + '<br>');
+            }
+
+            document.write('<br>El promedio es: ' + promedio);
+        }
+
+        let notas = new Array(5);
+
+        cargar(notas);
+        calcularPromedio(notas);
+    </script>
+
+</body>
+
+</html>
